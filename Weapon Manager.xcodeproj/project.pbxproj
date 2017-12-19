@@ -18,6 +18,12 @@
 		1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */; };
 		1CE91DBB1FE82ABB009807D4 /* WeaponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */; };
 		667F135A1FE95BBF00F3C2FE /* Destiny2API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F13591FE95BBF00F3C2FE /* Destiny2API.swift */; };
+		667F138D1FE9649100F3C2FE /* ManifestDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F138C1FE9649100F3C2FE /* ManifestDao.swift */; };
+		667F13A61FE96F9B00F3C2FE /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F13991FE96F8E00F3C2FE /* SQLite.framework */; };
+		667F13A71FE96FA000F3C2FE /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F13991FE96F8E00F3C2FE /* SQLite.framework */; };
+		667F13A81FE96FA000F3C2FE /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 667F13991FE96F8E00F3C2FE /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		667F13AF1FE974B200F3C2FE /* asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 667F13AD1FE974B200F3C2FE /* asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3 */; };
+		667F13B01FE974B200F3C2FE /* world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 667F13AE1FE974B200F3C2FE /* world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +41,77 @@
 			remoteGlobalIDString = 1CE91D841FE81729009807D4;
 			remoteInfo = "Weapon Manager";
 		};
+		667F13981FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		667F139A1FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		667F139C1FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		667F139E1FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		667F13A01FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		667F13A21FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		667F13A41FE96F8E00F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		667F13A91FE96FA000F3C2FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		667F13AB1FE96FA000F3C2FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				667F13A81FE96FA000F3C2FE /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C27EFDE1FE8303F0043EF3C /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -55,6 +131,10 @@
 		1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponTableViewCell.swift; sourceTree = "<group>"; };
 		1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTableViewController.swift; sourceTree = "<group>"; };
 		667F13591FE95BBF00F3C2FE /* Destiny2API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destiny2API.swift; sourceTree = "<group>"; };
+		667F138C1FE9649100F3C2FE /* ManifestDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestDao.swift; sourceTree = "<group>"; };
+		667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../../swiftSQLite/SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
+		667F13AD1FE974B200F3C2FE /* asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3; sourceTree = "<group>"; };
+		667F13AE1FE974B200F3C2FE /* world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667F13A71FE96FA000F3C2FE /* SQLite.framework in Frameworks */,
+				667F13A61FE96F9B00F3C2FE /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +167,12 @@
 		1CE91D7C1FE81729009807D4 = {
 			isa = PBXGroup;
 			children = (
+				667F13AC1FE9749900F3C2FE /* Resources */,
 				1CE91D871FE81729009807D4 /* Weapon Manager */,
 				1CE91D9C1FE81729009807D4 /* Weapon ManagerTests */,
 				1CE91DA71FE81729009807D4 /* Weapon ManagerUITests */,
 				1CE91D861FE81729009807D4 /* Products */,
+				667F13731FE9645C00F3C2FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +199,7 @@
 				1CE91D941FE81729009807D4 /* Info.plist */,
 				1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */,
 				1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */,
+				667F138C1FE9649100F3C2FE /* ManifestDao.swift */,
 			);
 			path = "Weapon Manager";
 			sourceTree = "<group>";
@@ -137,6 +222,37 @@
 			path = "Weapon ManagerUITests";
 			sourceTree = "<group>";
 		};
+		667F13731FE9645C00F3C2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		667F138F1FE96F8E00F3C2FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667F13991FE96F8E00F3C2FE /* SQLite.framework */,
+				667F139B1FE96F8E00F3C2FE /* SQLiteTests iOS.xctest */,
+				667F139D1FE96F8E00F3C2FE /* SQLite.framework */,
+				667F139F1FE96F8E00F3C2FE /* SQLiteTests Mac.xctest */,
+				667F13A11FE96F8E00F3C2FE /* SQLite.framework */,
+				667F13A31FE96F8E00F3C2FE /* SQLiteTests tvOS.xctest */,
+				667F13A51FE96F8E00F3C2FE /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667F13AC1FE9749900F3C2FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				667F13AD1FE974B200F3C2FE /* asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3 */,
+				667F13AE1FE974B200F3C2FE /* world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +263,12 @@
 				1CE91D811FE81729009807D4 /* Sources */,
 				1CE91D821FE81729009807D4 /* Frameworks */,
 				1CE91D831FE81729009807D4 /* Resources */,
+				667F13AB1FE96FA000F3C2FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				667F13AA1FE96FA000F3C2FE /* PBXTargetDependency */,
 			);
 			name = "Weapon Manager";
 			productName = "Weapon Manager";
@@ -209,7 +327,7 @@
 					};
 					1CE91D981FE81729009807D4 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 1CE91D841FE81729009807D4;
 					};
 					1CE91DA31FE81729009807D4 = {
@@ -230,6 +348,12 @@
 			mainGroup = 1CE91D7C1FE81729009807D4;
 			productRefGroup = 1CE91D861FE81729009807D4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 667F138F1FE96F8E00F3C2FE /* Products */;
+					ProjectRef = 667F138E1FE96F8E00F3C2FE /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1CE91D841FE81729009807D4 /* Weapon Manager */,
@@ -239,13 +363,67 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		667F13991FE96F8E00F3C2FE /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 667F13981FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F139B1FE96F8E00F3C2FE /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 667F139A1FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F139D1FE96F8E00F3C2FE /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 667F139C1FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F139F1FE96F8E00F3C2FE /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 667F139E1FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F13A11FE96F8E00F3C2FE /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 667F13A01FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F13A31FE96F8E00F3C2FE /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 667F13A21FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		667F13A51FE96F8E00F3C2FE /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 667F13A41FE96F8E00F3C2FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1CE91D831FE81729009807D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1CE91D931FE81729009807D4 /* LaunchScreen.storyboard in Resources */,
+				667F13B01FE974B200F3C2FE /* world_sql_content_2fba9035f04307960f6baafa1784e848.sqlite3 in Resources */,
 				1CE91D901FE81729009807D4 /* Assets.xcassets in Resources */,
+				667F13AF1FE974B200F3C2FE /* asset_sql_content_786c2f47cc3ed05b7a132d021b035a76.sqlite3 in Resources */,
 				1CE91D8E1FE81729009807D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +452,7 @@
 				667F135A1FE95BBF00F3C2FE /* Destiny2API.swift in Sources */,
 				1C27EFDF1FE8303F0043EF3C /* Weapon.swift in Sources */,
 				1CE91D8B1FE81729009807D4 /* WeaponViewController.swift in Sources */,
+				667F138D1FE9649100F3C2FE /* ManifestDao.swift in Sources */,
 				1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */,
 				1CE91D891FE81729009807D4 /* AppDelegate.swift in Sources */,
 				1CE91DBB1FE82ABB009807D4 /* WeaponTableViewController.swift in Sources */,
@@ -308,6 +487,11 @@
 			isa = PBXTargetDependency;
 			target = 1CE91D841FE81729009807D4 /* Weapon Manager */;
 			targetProxy = 1CE91DA51FE81729009807D4 /* PBXContainerItemProxy */;
+		};
+		667F13AA1FE96FA000F3C2FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 667F13A91FE96FA000F3C2FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -360,7 +544,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hoeing@gmail.com (NHJ3KHEX4Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -417,7 +601,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hoeing@gmail.com (NHJ3KHEX4Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -441,12 +625,17 @@
 		1CE91DAE1FE81729009807D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Weapon Manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,12 +644,17 @@
 		1CE91DAF1FE81729009807D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Weapon Manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,11 +665,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Weapon ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-ManagerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weapon Manager.app/Weapon Manager";
@@ -487,11 +685,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Weapon ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-ManagerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weapon Manager.app/Weapon Manager";
@@ -504,6 +706,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Weapon ManagerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-ManagerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,6 +722,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Weapon ManagerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dapacreative.Weapon-ManagerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
