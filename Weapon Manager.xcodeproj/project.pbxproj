@@ -17,6 +17,7 @@
 		1CE91DA91FE81729009807D4 /* Weapon_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DA81FE81729009807D4 /* Weapon_ManagerUITests.swift */; };
 		1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */; };
 		1CE91DBB1FE82ABB009807D4 /* WeaponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */; };
+		667F135A1FE95BBF00F3C2FE /* Destiny2API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F13591FE95BBF00F3C2FE /* Destiny2API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1CE91DAA1FE81729009807D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponTableViewCell.swift; sourceTree = "<group>"; };
 		1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTableViewController.swift; sourceTree = "<group>"; };
+		667F13591FE95BBF00F3C2FE /* Destiny2API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destiny2API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		1CE91D871FE81729009807D4 /* Weapon Manager */ = {
 			isa = PBXGroup;
 			children = (
+				667F13591FE95BBF00F3C2FE /* Destiny2API.swift */,
 				1C27EFDE1FE8303F0043EF3C /* Weapon.swift */,
 				1CE91D881FE81729009807D4 /* AppDelegate.swift */,
 				1CE91D8A1FE81729009807D4 /* WeaponViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667F135A1FE95BBF00F3C2FE /* Destiny2API.swift in Sources */,
 				1C27EFDF1FE8303F0043EF3C /* Weapon.swift in Sources */,
 				1CE91D8B1FE81729009807D4 /* WeaponViewController.swift in Sources */,
 				1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */,
