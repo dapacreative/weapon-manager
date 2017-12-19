@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C27EFDF1FE8303F0043EF3C /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27EFDE1FE8303F0043EF3C /* Weapon.swift */; };
 		1CE91D891FE81729009807D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91D881FE81729009807D4 /* AppDelegate.swift */; };
-		1CE91D8B1FE81729009807D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91D8A1FE81729009807D4 /* ViewController.swift */; };
+		1CE91D8B1FE81729009807D4 /* WeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91D8A1FE81729009807D4 /* WeaponViewController.swift */; };
 		1CE91D8E1FE81729009807D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE91D8C1FE81729009807D4 /* Main.storyboard */; };
 		1CE91D901FE81729009807D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE91D8F1FE81729009807D4 /* Assets.xcassets */; };
 		1CE91D931FE81729009807D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE91D911FE81729009807D4 /* LaunchScreen.storyboard */; };
 		1CE91D9E1FE81729009807D4 /* Weapon_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91D9D1FE81729009807D4 /* Weapon_ManagerTests.swift */; };
 		1CE91DA91FE81729009807D4 /* Weapon_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DA81FE81729009807D4 /* Weapon_ManagerUITests.swift */; };
+		1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */; };
+		1CE91DBB1FE82ABB009807D4 /* WeaponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C27EFDE1FE8303F0043EF3C /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		1CE91D851FE81729009807D4 /* Weapon Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weapon Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE91D881FE81729009807D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CE91D8A1FE81729009807D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CE91D8A1FE81729009807D4 /* WeaponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponViewController.swift; sourceTree = "<group>"; };
 		1CE91D8D1FE81729009807D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CE91D8F1FE81729009807D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE91D921FE81729009807D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		1CE91DA41FE81729009807D4 /* Weapon ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weapon ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE91DA81FE81729009807D4 /* Weapon_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon_ManagerUITests.swift; sourceTree = "<group>"; };
 		1CE91DAA1FE81729009807D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponTableViewCell.swift; sourceTree = "<group>"; };
+		1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		1CE91D871FE81729009807D4 /* Weapon Manager */ = {
 			isa = PBXGroup;
 			children = (
+				1C27EFDE1FE8303F0043EF3C /* Weapon.swift */,
 				1CE91D881FE81729009807D4 /* AppDelegate.swift */,
-				1CE91D8A1FE81729009807D4 /* ViewController.swift */,
+				1CE91D8A1FE81729009807D4 /* WeaponViewController.swift */,
 				1CE91D8C1FE81729009807D4 /* Main.storyboard */,
 				1CE91D8F1FE81729009807D4 /* Assets.xcassets */,
 				1CE91D911FE81729009807D4 /* LaunchScreen.storyboard */,
 				1CE91D941FE81729009807D4 /* Info.plist */,
+				1CE91DB61FE8233D009807D4 /* weaponTableViewCell.swift */,
+				1CE91DBA1FE82ABB009807D4 /* WeaponTableViewController.swift */,
 			);
 			path = "Weapon Manager";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CE91D8B1FE81729009807D4 /* ViewController.swift in Sources */,
+				1C27EFDF1FE8303F0043EF3C /* Weapon.swift in Sources */,
+				1CE91D8B1FE81729009807D4 /* WeaponViewController.swift in Sources */,
+				1CE91DB71FE8233D009807D4 /* weaponTableViewCell.swift in Sources */,
 				1CE91D891FE81729009807D4 /* AppDelegate.swift in Sources */,
+				1CE91DBB1FE82ABB009807D4 /* WeaponTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
